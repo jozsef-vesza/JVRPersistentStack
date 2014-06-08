@@ -8,9 +8,10 @@ This example shows you how to set up a persistent stack in your application's ap
 
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    JVRPersistentStack *initialStack = [[JVRPersistentStack alloc] initWithStoreURL:[self storeURL] modelURL:[self modelURL]];
+
+    JVRPersistentStack *initialStack = [[JVRPersistentStack alloc] initWithStoreURL:[self storeURL] 
+                                                                           modelURL:[self modelURL]];
     UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
-    
     MyViewController *mainController = (MyViewController *)navController.topViewController;
     mainController.managedObjectContext = initialStack.managedObjectContext;
     
