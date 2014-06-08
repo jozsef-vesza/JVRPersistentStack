@@ -29,7 +29,7 @@ This example shows you how to set up a persistent stack in your application's ap
 
 #### Installation
 
-[CocoaPods](cocoapods.org) os a great way to add third party libraries to your project. You can install `JVRPersistentStack` with the following line in your podfile:
+[CocoaPods](http://cocoapods.org/) os a great way to add third party libraries to your project. You can install `JVRPersistentStack` with the following line in your podfile:
 
 ```ruby
   pod 'JVRPersistentStack'
